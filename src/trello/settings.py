@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-2e=j98%&g-(reg7z=cpy%!6&cq$7dbldp^jqpcwx9-prkrewnt
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -99,7 +99,6 @@ AUTH_PASSWORD_VALIDATORS = [
     },
 ]
 
-
 # Internationalization
 # https://docs.djangoproject.com/en/5.0/topics/i18n/
 
@@ -115,8 +114,11 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/5.0/howto/static-files/
 
-STATIC_URL = 'static/'
+STATIC_URL = 'static/static/'
+MEDIA_URL = 'static/media/'
 
+STATIC_ROOT = 'vol/web/statics'
+MEDIA_ROOT = 'vol/web/media'
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.0/ref/settings/#default-auto-field
 
